@@ -40,7 +40,7 @@ const Invitations: FC = () => {
         animate={controls}
         className="flex items-center justify-center">
           <Image
-            src="/Invitations.jpg"
+            src="/Invitations.png"
             width={480}
             height={480}
             alt="Invitation photo"
