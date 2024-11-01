@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this to your global CSS or in a module */
+/* General map container styling */
+.map-container {
+    position: relative;
+    width: 90vw;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for desktops */
+    
+  }
+  
+  /* Map fills the container */
+  .map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
