@@ -98,14 +98,16 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
             >
                 เขียนคำอวยพร
             </button>
-            {showModal && (
+
+            {/* {showModal && (
                 <div className="fixed inset-0 flex items-center justify-center z-50 ">
                 <div className="flex inset-0 flex items-center justify-center bg-opacity-50 backdrop-blur-sm z-10">
-                    <div className="bg-white p-6 rounded-lg shadow-lg w-full transform transition-all ease-in-out duration-300">
+                    <div className="flex bg-white p-6 rounded-lg shadow-lg transform transition-all ease-in-out duration-300">
                         {!isPhoneEntered ? (
                             <div>
-                                <h2 className="text-lg font-semibold mb-4">เข้าสู่ระบบด้วยเบอร์โทรศัพท์</h2>
-                                <input
+                                <h2 className=" flex text-lg font-semibold mb-4">เข้าสู่ระบบด้วยเบอร์โทรศัพท์</h2>
+                                <div className="flex flex-col">
+                                       <input
                                     type="text"
                                     placeholder="08xxxxxxxx"
                                     maxLength={10}
@@ -114,18 +116,20 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
                                         if (/^\d*$/.test(e.target.value)) setPhone(e.target.value);
                                     }}
 
-                                    className="w-full p-2 border border-gray-300 rounded mb-4 text-sm"
+                                    className=" p-2 border border-gray-300 rounded mb-4 text-sm"
                                 />
                                 <button
-                                    className="w-full bg-gradient-to-r from-cyan-500 to-teal-400 hover:bg-gradient-to-l hover:from-teal-500 hover:to-cyan-400 text-white py-2 rounded hover:bg-purple-600 text-sm"
+                                    className=" bg-gradient-to-r from-cyan-500 to-teal-400 hover:bg-gradient-to-l hover:from-teal-500 hover:to-cyan-400 text-white py-2 rounded hover:bg-purple-600 text-sm"
                                     onClick={handlePhoneSubmit}
                                 >
                                     ดำเนินการต่อ
                                 </button>
+                                </div>
+                             
                             </div>
                         ) : !isFormVisible ? (
                             <div>
-                                <h2 className="text-xl font-semibold mb-4">กรอกรหัส OTP</h2>
+                                <h2 className="flex text-xl font-semibold mb-4">กรอกรหัส OTP</h2>
                                 <input
                                     type="text"
                                     placeholder="รหัสยืนยัน"
@@ -145,7 +149,7 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
                                     )}
                                 </p>
                                 <button
-                                    className="w-full bg-purple-500 text-white py-2 rounded hover:bg-purple-600 text-sm"
+                                    className="bg-purple-500 text-white py-2 rounded hover:bg-purple-600 text-sm"
                                     onClick={handleOTPSubmit}
                                 >
                                     ยืนยันรหัส OTP
@@ -186,7 +190,99 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
                     </div>
                 </div>
                 </div>
+            )} */}
+
+{showModal && (
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 backdrop-blur-sm">
+        <div className="relative w-full max-w-lg mx-4 p-6 bg-white rounded-lg shadow-lg transform transition-all duration-300">
+            {!isPhoneEntered ? (
+                <div>
+                    <h2 className="text-lg font-semibold mb-4">เข้าสู่ระบบด้วยเบอร์โทรศัพท์</h2>
+                    <div className="flex flex-col">
+                        <input
+                            type="text"
+                            placeholder="08xxxxxxxx"
+                            maxLength={10}
+                            value={phone}
+                            onChange={(e) => {
+                                if (/^\d*$/.test(e.target.value)) setPhone(e.target.value);
+                            }}
+                            className="p-2 border border-gray-300 rounded mb-4 text-sm"
+                        />
+                        <button
+                            className="bg-gradient-to-r from-cyan-500 to-teal-400 text-white py-2 rounded hover:bg-gradient-to-l text-sm"
+                            onClick={handlePhoneSubmit}
+                        >
+                            ดำเนินการต่อ
+                        </button>
+                    </div>
+                </div>
+            ) : !isFormVisible ? (
+                <div>
+                    <h2 className="text-xl font-semibold mb-4">กรอกรหัส OTP</h2>
+                    <input
+                        type="text"
+                        placeholder="รหัสยืนยัน"
+                        maxLength={4}
+                        value={otp}
+                        onChange={(e) => setOtp(e.target.value)}
+                        className="w-full p-2 border border-gray-300 rounded mb-4 text-sm"
+                    />
+                    <p className="text-gray-600 mb-4 text-sm">
+                        ส่ง OTP แล้ว กรณียังไม่ได้รับ SMS ให้กด{" "}
+                        {canRequestOTP ? (
+                            <button onClick={handleRequestOTP} className="text-blue-500 underline">
+                                Request OTP
+                            </button>
+                        ) : (
+                            <span className="text-gray-400">Request OTP ({secondsLeft}s)</span>
+                        )}
+                    </p>
+                    <button
+                        className="bg-purple-500 text-white py-2 rounded text-sm"
+                        onClick={handleOTPSubmit}
+                    >
+                        ยืนยันรหัส OTP
+                    </button>
+                </div>
+            ) : (
+                <div>
+                    <h2 className="text-xl font-semibold mb-4">เขียนคำอวยพร</h2>
+                    <form onSubmit={handleSubmit}>
+                        <input
+                            type="text"
+                            name="name"
+                            required
+                            placeholder="ชื่อผู้เขียนคำอวยพร"
+                            className="w-full p-2 border border-gray-300 rounded mb-4 text-sm"
+                        />
+                        <textarea
+                            name="description"
+                            required
+                            placeholder="คำอวยพร"
+                            className="w-full p-2 border border-gray-300 rounded mb-4 text-sm"
+                        />
+                        <button
+                            type="submit"
+                            className="w-full bg-purple-500 text-white py-2 rounded text-sm"
+                        >
+                            ยืนยัน
+                        </button>
+                    </form>
+                </div>
             )}
+            <button
+                onClick={closeModal}
+                className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+                aria-label="Close OTP Modal"
+            >
+                &times;
+            </button>
+        </div>
+    </div>
+)}
+
+            
         </>
     );
 };
