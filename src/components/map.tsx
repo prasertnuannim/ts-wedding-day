@@ -56,6 +56,7 @@ function Map({}: Props) {
           padding-bottom: 56.25%; /* Default 16:9 aspect ratio */
           margin-left: auto;
           margin-right: auto;
+          margin-bottom: 1.7rem;
         }
 
         .map {

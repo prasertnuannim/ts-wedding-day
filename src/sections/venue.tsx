@@ -30,18 +30,23 @@ export default function Venue() {
     <section
       ref={ref}
       id="venue"
-      className=" max-w-[74rem] sm:mb-0"
+      className="justify-center items-center mt-2 max-w-[74rem] text-center sm:mb-0 xl:w-[600px]lg:w-[500px] md:w-[500px]"
     >
       <motion.div
         ref={ref}
+          className='flex flex-col  h-auto shadow-xl rounded-xl bg-gradient-to-r from-sky-500 to-sky-800'
         animate={controls}
         initial={{ y: 100, opacity: 0 }}
         transition={{ duration: 0.8, ease: 'easeInOut' }}
-        className='bg-gray-200 flex flex-col h-auto w-full'>
-        <p className='text-xl justify-center items-center text-start pl-5 pt-4 pb-2 text-gray-700 font-extrabold'>Location</p>
-        <div>
-          <Map />
+      
+      >
+        <div className='flex flex-col text-white text-lg justify-start items-start'>
+          <p className='text-xl justify-center items-center text-center pl-5 pt-4 pb-2 text-white font-bold'>Location</p>
+          <div>
+            <Map />7
+          </div>
         </div>
+
 
       </motion.div>
 
