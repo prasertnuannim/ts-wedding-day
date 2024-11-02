@@ -99,8 +99,8 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
                 เขียนคำอวยพร
             </button>
             {showModal && (
-                <div className="fixed inset-0 flex items-center justify-center z-50 m-2">
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="fixed inset-0 flex items-center justify-center z-50 ">
+                <div className="flex inset-0 flex items-center justify-center bg-opacity-50 backdrop-blur-sm z-10">
                     <div className="bg-white p-6 rounded-lg shadow-lg w-full transform transition-all ease-in-out duration-300">
                         {!isPhoneEntered ? (
                             <div>
@@ -153,7 +153,7 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
                             </div>
                         ) : (
                             <div>
-                                <h2 className="text-xl font-semibold mb-4">เขียนคำอวยพร</h2>
+                                <h2 className="flex text-xl font-semibold mb-4">เขียนคำอวยพร</h2>
                                 <form onSubmit={handleSubmit}>
                                     <input
                                         type="text"
