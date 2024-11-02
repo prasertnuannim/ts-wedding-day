@@ -43,10 +43,9 @@ export default function Venue() {
         <div className='flex flex-col text-white text-lg justify-start items-start'>
           <p className='text-xl justify-center items-center text-center pl-5 pt-4 pb-2 text-white font-bold'>Location</p>
           <div>
-            <Map />7
+            <Map />
           </div>
         </div>
-
 
       </motion.div>
 

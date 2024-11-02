@@ -99,9 +99,9 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
                 เขียนคำอวยพร
             </button>
             {showModal && (
-                <div className="fixed inset-0 flex items-center justify-center z-50">
+                <div className="fixed inset-0 flex items-center justify-center z-50 m-2">
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                    <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md transform transition-all ease-in-out duration-300">
+                    <div className="bg-white p-6 rounded-lg shadow-lg w-full transform transition-all ease-in-out duration-300">
                         {!isPhoneEntered ? (
                             <div>
                                 <h2 className="text-lg font-semibold mb-4">เข้าสู่ระบบด้วยเบอร์โทรศัพท์</h2>
