@@ -53,8 +53,6 @@ const Blessing = (props: Props) => {
     hidden: { opacity: 0, y: 20 },  // Start below and invisible
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }, // Slide to position
   };
-
-  console.log('>>>>', forms)
   return (
     <section
       ref={ref}

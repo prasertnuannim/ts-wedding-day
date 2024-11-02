@@ -99,18 +99,18 @@ const Gift = (props: Props) => {
                             <img src='/QR-code.png' alt='QR Code' className='w-full h-full object-cover rounded-lg' />
                         </div>
 
-                        <div className='w-3/5 space-y-2 text-left pl-4'>
-                            <p className='text-sm font-bold text-black'>
-                                ธนาคาร
-                                <span className='text-white text-sm pl-2 font-medium'>กสิกรไทย</span>
+                        <div className='w-3/5 text-left pl-4 pt-4'>
+                            <p className='text-sm font-bold text-black pb-1'>
+                                ธนาคาร <br/>
+                                <span className='text-white text-sm font-medium'>กสิกรไทย</span>
                             </p>
-                            <p className='text-sm font-bold text-black'>
-                                ชื่อบัญชี
-                                <span className='text-white text-sm pl-2 font-medium'>น.ส. จารุวรรณ พันลำภักดิ์</span>
+                            <p className='text-sm font-bold text-black pb-1'>
+                                ชื่อบัญชี <br/>
+                                <span className='text-white text-sm font-medium'>น.ส. จารุวรรณ พันลำภักดิ์</span>
                             </p>
-                            <p className='flex items-center text-sm font-bold text-black'>
-                                เลขที่บัญชี
-                                <span className='text-white text-sm pl-2 font-medium'>
+                            <p className='text-sm font-bold text-black pb-1'>
+                                เลขที่บัญชี <br/>
+                                <span className='text-white text-sm font-medium'>
                                     {accountNumber}
                                 </span>
 
@@ -136,10 +136,7 @@ const Gift = (props: Props) => {
                         />
                     )}
                 </div>
-
             </motion.div>
-
-
         </>
     );
 };

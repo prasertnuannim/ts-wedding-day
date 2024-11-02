@@ -1079,6 +1079,15 @@ video {
 .pt-5 {
   padding-top: 1.25rem;
 }
+.pl-3 {
+  padding-left: 0.75rem;
+}
+.pt-3 {
+  padding-top: 0.75rem;
+}
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
 .text-left {
   text-align: left;
 }
