@@ -62,7 +62,7 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
         event.preventDefault();
         const formData = {
             phone,
-            name: event.currentTarget.name.valueOf,
+            name: (event.currentTarget.elements.namedItem("name") as HTMLInputElement).value,
             description: event.currentTarget.description.value,
         };
 

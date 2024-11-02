@@ -33,10 +33,9 @@ const Event = (props: Props) => {
                     </div>
            
                 <div className='flex flex-col text-white text-lg justify-start items-start p-5'>
-                    <p>08:00 พิธีแห่ขันหมาก</p>
-                    <p> 08:29 พิธีหมั้น</p>
-                    <p> 11:00 รับประทานอาหารเที่ยง</p>
-
+                    <p>09:29 พิธีแห่ขันหมาก</p>
+                    <p>09:39 พิธีหมั้น</p>
+                    <p>11:00 รับประทานอาหารเที่ยง</p>
                 </div>
             </motion.div>
         </>

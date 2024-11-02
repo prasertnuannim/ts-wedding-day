@@ -21,11 +21,11 @@ const Blessing = (props: Props) => {
 
   useEffect(() => {
     if (inView) {
-        controls.start({ x: 0, opacity: 1 });
+      controls.start({ x: 0, opacity: 1 });
     } else {
-        controls.start({ x: 100, opacity: 0 });
+      controls.start({ x: 100, opacity: 0 });
     }
-}, [controls, inView]);
+  }, [controls, inView]);
 
 
   const [forms, setForms] = useState<Form[]>([]);
@@ -54,6 +54,7 @@ const Blessing = (props: Props) => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }, // Slide to position
   };
 
+  console.log('>>>>', forms)
   return (
     <section
       ref={ref}
@@ -69,13 +70,11 @@ const Blessing = (props: Props) => {
         animate={controls}
         transition={{ duration: 0.8 }}
       >
-       <div className="flex justify-end p-2">
-  <p className="text-xl font-extrabold text-red-200">
-    Wedding Wish
-  </p>
-</div>
-
-
+        <div className="flex justify-end p-2">
+          <p className="text-xl font-extrabold text-red-200">
+            Wedding Wish
+          </p>
+        </div>
         <div className="relative mb-4">
           <OTPModal fetchForms={fetchForms} />
         </div>

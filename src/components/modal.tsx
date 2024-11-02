@@ -1,18 +1,17 @@
 import React from 'react';
 
-type ModalProps = {
+interface ModalProps {
     show: boolean;
     message: string;
 }
 
-const Modal = ({ show, message }: ModalProps) => {
-    if (!show) return null;
+const Modal: React.FC<ModalProps> = ({ show, message }) => {
+    if (!show) return null; // Render nothing if show is false
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center glass">
-            <div className="bg-white p-2 rounded shadow-lg">
-                <p className="text-lg font-bold">{message}</p>
-                
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm z-10">
+            <div className="bg-white p-4 rounded shadow-lg text-center">
+                <p>{message}</p>
             </div>
         </div>
     );

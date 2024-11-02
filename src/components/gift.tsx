@@ -8,7 +8,7 @@ import { TypeAnimation } from 'react-type-animation';
 type Props = {}
 
 const Gift = (props: Props) => {
-    const accountNumber = '123-4-56789-0';
+    const accountNumber = '539-2-94333-5';
     const [copied, setCopied] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const inputRef = useRef<HTMLInputElement | null>(null); // Ref for backup copy method
@@ -64,27 +64,27 @@ const Gift = (props: Props) => {
                 animate={controls}
                 initial={{ x: -100, opacity: 0 }}
                 transition={{ duration: 0.8 }}
-                className='flex flex-col h-auto w-full bg-gradient-to-t from-blue-300 to-blue-300 rounded-tr-[50px] rounded-br-[50px] mt-6 shadow-2xl relative'
+                className='flex flex-col h-auto w-full bg-gradient-to-t from-blue-300 to-blue-300 rounded-tr-[50px] rounded-br-[50px] mt-2 shadow-2xl relative'
             >
                 <div className='flex flex-col'>
-                    <p className='absolute inset-0 flex items-start justify-end text-xl pr-5 pt-1 text-white font-extrabold opacity-40'>
-                       
+                    <p className='absolute inset-0 flex items-start justify-end text-lg pr-5 pt-1 text-white font-extrabold'>
+
                         <TypeAnimation
-                  sequence={[
-                    "Give a gift to a newlywed couple",
-                    2000,
-                    "มอบของขวัญให้คู่บ่าวสาว",
-                    2000,
-                  ]}
-                  wrapper="strong"
-                  speed={50}
-                  repeat={Infinity}
-                />
+                            sequence={[
+                                "Give a gift to a newlywed couple",
+                                2000,
+                                "มอบของขวัญให้คู่บ่าวสาว",
+                                2000,
+                            ]}
+                            wrapper="strong"
+                            speed={50}
+                            repeat={Infinity}
+                        />
                     </p>
                 </div>
 
                 <div>
-                    <div className='flex flex-row items-center justify-between p-6'>
+                    <div className='flex flex-row items-center justify-between p-4'>
                         {/* Hidden Input for Fallback */}
                         <input
                             ref={inputRef}
@@ -95,14 +95,11 @@ const Gift = (props: Props) => {
                         />
 
                         {/* QR Code Section */}
-                        <div className='w-2/5 flex items-center justify-center p-4 pt-6'>
-                            {/* <div className='w-full h-full bg-gray-300 rounded-sm flex items-center justify-center'>
-                                <span className='text-gray-500 font-semibold'>QR Code</span>
-                            </div> */}
-                            <img src='/qrcode.png' alt='QR Code' className='w-full h-full object-cover rounded-lg' />
+                        <div className='w-2/5 flex items-center justify-center pt-4'>
+                            <img src='/QR-code.png' alt='QR Code' className='w-full h-full object-cover rounded-lg' />
                         </div>
 
-                        <div className='w-3/5 space-y-2 text-left pl-3'>
+                        <div className='w-3/5 space-y-2 text-left pl-4'>
                             <p className='text-sm font-bold text-black'>
                                 ธนาคาร
                                 <span className='text-white text-sm pl-2 font-medium'>กสิกรไทย</span>
@@ -116,20 +113,19 @@ const Gift = (props: Props) => {
                                 <span className='text-white text-sm pl-2 font-medium'>
                                     {accountNumber}
                                 </span>
-                                <div>
-                                    <button
-                                        className={`text-sm font-bold ml-2 underline transition-all duration-200 relative ${copied ? 'text-gray-900 hover:text-white' : 'text-gray-300 hover:text-gray-600'
-                                            }`}
-                                        onClick={handleCopy}
-                                        aria-label="Copy account number"
-                                    >
-                                        Copy
-                                    </button>
-                                </div>
+
                             </p>
+                            <div>
+                                <button
+                                    className={`text-sm font-bold underline transition-all duration-200 relative ${copied ? 'text-gray-900 hover:text-white' : 'text-black hover:text-gray-600'
+                                        }`}
+                                    onClick={handleCopy}
+                                    aria-label="Copy account number"
+                                >
+                                    Copy
+                                </button>
+                            </div>
                         </div>
-
-
                     </div>
 
                     {/* Modal Display */}
@@ -137,7 +133,6 @@ const Gift = (props: Props) => {
                         <Modal
                             show={showModal}
                             message="Copied (คัดลอกเลขบัญชีแล้ว)"
-                        // onClose={() => setShowModal(false)} // optional onClose handler
                         />
                     )}
                 </div>
