@@ -759,6 +759,9 @@ video {
 .flex-row {
   flex-direction: row;
 }
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -1049,6 +1052,15 @@ video {
 .pb-1 {
   padding-bottom: 0.25rem;
 }
+.pt-8 {
+  padding-top: 2rem;
+}
+.pt-6 {
+  padding-top: 1.5rem;
+}
+.pl-2 {
+  padding-left: 0.5rem;
+}
 .text-left {
   text-align: left;
 }
@@ -1118,6 +1130,9 @@ video {
 }
 .text-\[14px\] {
   font-size: 14px;
+}
+.text-\[1px\] {
+  font-size: 1px;
 }
 .font-bold {
   font-weight: 700;

@@ -16,12 +16,12 @@ const WeddingCard2 = (props: Props) => {
       className="h-auto shadow-xl relative overflow-hidden flex justify-center" 
     >
       <div
-        className=" max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
+        className=""
       >
         <Image
-          src="/itinerary.png"
-          width={480}
-          height={480}
+          src="/card.png"
+          width={450}
+          height={0}
           alt="Wedding invitation image"
           quality={100}
           priority

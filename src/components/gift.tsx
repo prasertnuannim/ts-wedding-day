@@ -63,13 +63,13 @@ const Gift = (props: Props) => {
                 ref={ref}             
                 className='flex flex-col h-auto w-full bg-blue-300 shadow-2xl relative'
             >
-                {/* <div className='flex flex-col'>
+                <div className='flex flex-col'>
                     <p className='absolute inset-0 flex items-start justify-end text-xl pr-5 pt-1 text-gray-500 font-extrabold'>
                     มอบของขวัญให้คู่บ่าวสาว
                     </p>
-                </div> */}
+                </div>
 
-                <div>
+                <div >
                     <div className='flex flex-row items-center justify-between p-4'>
                         {/* Hidden Input for Fallback */}
                         <input
@@ -85,19 +85,19 @@ const Gift = (props: Props) => {
                             <img src='/QR-code.png' alt='QR Code' className='w-full h-full object-cover rounded-lg' />
                         </div>
 
-                        <div className='w-3/5 text-left pl-4 '>
-                        <p className=' text-[20px] pb-6 text-gray-500 font-extrabold'>
+                        <div className='w-3/5 text-left pl-4 pt-6 '>
+                        {/* <p className=' text-[20px] pb-6 text-gray-500 font-extrabold'>
                     มอบของขวัญให้คู่บ่าวสาว
-                    </p>
-                            <p className='text-[16px] font-bold text-white pb-4'>
+                    </p> */}
+                            <p className='text-[16px] font-bold text-white pb-1'>
                                 ธนาคาร <br/>
                                 <span className='text-gray-500 text-[14px] font-medium'>กสิกรไทย</span>
                             </p>
-                            <p className='text-[16px] font-bold text-white pb-4'>
+                            <p className='text-[16px] font-bold text-white pb-2'>
                                 ชื่อบัญชี <br/>
                                 <span className='text-gray-500 text-[14px] font-medium'>น.ส. จารุวรรณ พันลำภักดิ์</span>
                             </p>
-                            <p className='text-[16px] font-bold text-white pb-4'>
+                            <p className='text-[16px] font-bold text-white pb-2'>
                                 เลขที่บัญชี <br/>
                                 <span className='text-gray-500 text-[14px] font-medium'>
                                     {accountNumber}
