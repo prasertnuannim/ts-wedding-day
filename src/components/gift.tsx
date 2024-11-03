@@ -59,29 +59,15 @@ const Gift = (props: Props) => {
 
     return (
         <>
-            <motion.div
-                ref={ref}
-                animate={controls}
-                initial={{ x: -100, opacity: 0 }}
-                transition={{ duration: 0.8 }}
-                className='flex flex-col h-auto w-full bg-gradient-to-t from-blue-300 to-blue-300 rounded-tr-[50px] rounded-br-[50px] mt-2 shadow-2xl relative'
+            <div
+                ref={ref}             
+                className='flex flex-col h-auto w-full bg-blue-300 shadow-2xl relative'
             >
-                <div className='flex flex-col'>
-                    <p className='absolute inset-0 flex items-start justify-end text-lg pr-5 pt-1 text-white font-extrabold'>
-
-                        <TypeAnimation
-                            sequence={[
-                                "Give a gift to a newlywed couple",
-                                2000,
-                                "มอบของขวัญให้คู่บ่าวสาว",
-                                2000,
-                            ]}
-                            wrapper="strong"
-                            speed={50}
-                            repeat={Infinity}
-                        />
+                {/* <div className='flex flex-col'>
+                    <p className='absolute inset-0 flex items-start justify-end text-xl pr-5 pt-1 text-gray-500 font-extrabold'>
+                    มอบของขวัญให้คู่บ่าวสาว
                     </p>
-                </div>
+                </div> */}
 
                 <div>
                     <div className='flex flex-row items-center justify-between p-4'>
@@ -95,36 +81,35 @@ const Gift = (props: Props) => {
                         />
 
                         {/* QR Code Section */}
-                        <div className='w-2/5 flex items-center justify-center pt-4'>
+                        <div className='w-2/5 flex items-center justify-center pt-2'>
                             <img src='/QR-code.png' alt='QR Code' className='w-full h-full object-cover rounded-lg' />
                         </div>
 
-                        <div className='w-3/5 text-left pl-4 pt-4'>
-                            <p className='text-sm font-bold text-black pb-1'>
+                        <div className='w-3/5 text-left pl-4 pt-10'>
+                        <p className=' text-[23px] pb-6 text-gray-500 font-extrabold'>
+                    มอบของขวัญให้คู่บ่าวสาว
+                    </p>
+                            <p className='text-[16px] font-bold text-white pb-4'>
                                 ธนาคาร <br/>
-                                <span className='text-white text-sm font-medium'>กสิกรไทย</span>
+                                <span className='text-gray-500 text-[16px] font-medium'>กสิกรไทย</span>
                             </p>
-                            <p className='text-sm font-bold text-black pb-1'>
+                            <p className='text-[16px] font-bold text-white pb-4'>
                                 ชื่อบัญชี <br/>
-                                <span className='text-white text-sm font-medium'>น.ส. จารุวรรณ พันลำภักดิ์</span>
+                                <span className='text-gray-500 text-[16px] font-medium'>น.ส. จารุวรรณ พันลำภักดิ์</span>
                             </p>
-                            <p className='text-sm font-bold text-black pb-1'>
+                            <p className='text-[16px] font-bold text-white pb-4'>
                                 เลขที่บัญชี <br/>
-                                <span className='text-white text-sm font-medium'>
+                                <span className='text-gray-500 text-[16px] font-medium'>
                                     {accountNumber}
-                                </span>
-
-                            </p>
-                            <div>
-                                <button
-                                    className={`text-sm font-bold underline transition-all duration-200 relative ${copied ? 'text-gray-900 hover:text-white' : 'text-black hover:text-gray-600'
+                                </span> <button
+                                    className={`text-sm font-bold underline transition-all duration-200 relative ${copied ? 'text-gray-900 hover:text-white' : 'text-gray-500 hover:text-gray-600'
                                         }`}
                                     onClick={handleCopy}
                                     aria-label="Copy account number"
                                 >
                                     Copy
                                 </button>
-                            </div>
+                            </p>
                         </div>
                     </div>
 
@@ -136,7 +121,7 @@ const Gift = (props: Props) => {
                         />
                     )}
                 </div>
-            </motion.div>
+            </div>
         </>
     );
 };

@@ -30,24 +30,29 @@ export default function Venue() {
     <section
       ref={ref}
       id="venue"
-      className="justify-center items-center mt-2 max-w-[74rem] text-center sm:mb-0 xl:w-[600px]lg:w-[500px] md:w-[500px]"
+      className="bg-sky-100 justify-center items-center max-w-[74rem] text-center sm:mb-0 xl:w-[600px]lg:w-[500px] md:w-[500px]"
     >
-      <motion.div
+      <div
         ref={ref}
-          className='flex flex-col  h-auto shadow-xl rounded-xl bg-gradient-to-r from-sky-500 to-sky-800'
-        animate={controls}
-        initial={{ y: 100, opacity: 0 }}
-        transition={{ duration: 0.8, ease: 'easeInOut' }}
-      
+          className='flex flex-col h-auto shadow-xl rounded-xl bg-gradient-to-r from-sky-500 to-sky-800'
+
+
+
+    
       >
-        <div className='flex flex-col text-white text-lg justify-start items-start'>
-          <p className='text-xl justify-center items-center text-center pl-5 pt-4 pb-2 text-white font-bold'>Location</p>
+        <div className='flex flex-col mb-8'>
+          <p className='text-2xl text-gray-500 justify-center items-center text-center p-2 font-bold'>Location</p>
           <div>
             <Map />
           </div>
         </div>
-
-      </motion.div>
+        <div>
+          <p className='text-sm justify-center items-center text-center p-2 text-gray-500 font-bold'>บ้านเลขที่ 99 หมู่ที่ 3 ต.เชียงดา อ.สร้างคอม จ.อุดรธานี 41260</p>
+          <p className='text-sm justify-center items-center text-center p-2 text-gray-500 font-bold'>
+          Tel : 095-9594188, 083-0099743
+          </p>
+        </div>
+      </div>
 
     </section>
   );

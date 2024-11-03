@@ -27,7 +27,6 @@ const Blessing = (props: Props) => {
     }
   }, [controls, inView]);
 
-
   const [forms, setForms] = useState<Form[]>([]);
 
   // Fetch forms on page load
@@ -57,19 +56,14 @@ const Blessing = (props: Props) => {
     <section
       ref={ref}
       id="blessing"
-      className="justify-center items-center mb-4 mt-4 max-w-[74rem] text-center sm:mb-0 xl:w-[600px]lg:w-[500px] md:w-[500px]"
+      className="justify-center items-center mt-4 max-w-[74rem] text-center sm:mb-0 xl:w-[600px]lg:w-[500px] md:w-[500px]"
     >
-
-      <motion.div
+      <div
         ref={ref}
-        className="bg-gradient-to-t bg-blue-500 rounded-lg p-2 pace-y-4 mb-8 shadow-xl"
-        variants={containerVariants}
-        initial="hidden"
-        animate={controls}
-        transition={{ duration: 0.8 }}
+        className="bg-sky-100 shadow-xl"
       >
-        <div className="flex justify-end p-2">
-          <p className="text-xl font-extrabold text-red-200">
+        <div className="flex justify-center p-2">
+          <p className="text-2xl text-gray-500 font-extrabold pr-2">
             Wedding Wish
           </p>
         </div>
@@ -78,7 +72,7 @@ const Blessing = (props: Props) => {
         </div>
 
         <form className="flex flex-col justify-center">
-          <div className="h-96 overflow-y-auto border p-4 rounded-lg space-y-4 bg-white">
+          <div className="h-96 overflow-y-auto border p-4  space-y-4 bg-white">
             <p className="block text-lg font-semibold">คำอวยพร</p>
             <div className="flex flex-wrap justify-center content-start gap-4">
               {forms.map((item) =>
@@ -93,8 +87,7 @@ const Blessing = (props: Props) => {
           </div>
           {/* </div> */}
         </form>
-      </motion.div>
-
+      </div>
     </section>
   );
 };

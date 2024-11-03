@@ -92,7 +92,7 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
     return (
         <>
             <button
-                className="bg-gradient-to-r from-cyan-500 to-teal-400 hover:bg-gradient-to-l hover:from-teal-500 hover:to-cyan-400 text-white font-semibold px-6 py-3 rounded-md shadow-md text-lg justify-"
+                className="bg-sky-300 hover:bg-sky-500 hover:bg-sky-400 text-white font-semibold px-6 py-3 rounded-md shadow-md text-lg justify-"
                 onClick={() => setShowModal(true)}
                 aria-label="Open blessing form text-white"
             >
@@ -194,10 +194,10 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
 
 {showModal && (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 backdrop-blur-sm">
-        <div className="relative w-full max-w-lg mx-4 p-6 bg-white rounded-lg shadow-lg transform transition-all duration-300">
+        <div className="relative w-[320px] max-w-lg mx-4 p-6 bg-white rounded-lg shadow-lg transform transition-all duration-300">
             {!isPhoneEntered ? (
                 <div>
-                    <h2 className="text-lg font-semibold mb-4">เข้าสู่ระบบด้วยเบอร์โทรศัพท์</h2>
+                    <h2 className="text-sm font-semibold mb-4">เข้าสู่ระบบด้วยเบอร์โทรศัพท์</h2>
                     <div className="flex flex-col">
                         <input
                             type="text"
@@ -210,7 +210,7 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
                             className="p-2 border border-gray-300 rounded mb-4 text-sm"
                         />
                         <button
-                            className="bg-gradient-to-r from-cyan-500 to-teal-400 text-white py-2 rounded hover:bg-gradient-to-l text-sm"
+                            className="bg-sky-500 text-white py-2 rounded hover:bg-blue-300 text-sm"
                             onClick={handlePhoneSubmit}
                         >
                             ดำเนินการต่อ
@@ -239,7 +239,7 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
                         )}
                     </p>
                     <button
-                        className="bg-purple-500 text-white py-2 rounded text-sm"
+                         className="bg-sky-500 text-white py-2 rounded hover:bg-blue-300 text-sm"
                         onClick={handleOTPSubmit}
                     >
                         ยืนยันรหัส OTP
@@ -264,7 +264,7 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
                         />
                         <button
                             type="submit"
-                            className="w-full bg-purple-500 text-white py-2 rounded text-sm"
+                           className="bg-sky-500 text-white py-2 rounded hover:bg-blue-300 text-sm"
                         >
                             ยืนยัน
                         </button>

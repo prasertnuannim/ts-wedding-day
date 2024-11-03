@@ -11,38 +11,12 @@ const WeddingCard2 = (props: Props) => {
     threshold: 0.2, // Trigger animation when 20% of the component is visible
   });
 
-  // Animation variants for the container and image
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 1.5 } },
-  };
-
-  const imageVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 1, ease: 'easeOut' } },
-  };
-
-  useEffect(() => {
-    if (inView) {
-      controls.start('visible');
-    } else {
-      controls.start('hidden');
-    }
-  }, [controls, inView]);
-
   return (
-    <motion.div
-      ref={ref}
-      className="h-auto w-full shadow-xl relative overflow-hidden flex justify-center xl:w-[600px] lg:w-[500px] md:w-[500px] mt-4"
-      variants={containerVariants}
-      initial="hidden"
-      animate={controls}
+    <div
+      className="h-auto shadow-xl relative overflow-hidden flex justify-center" 
     >
-      <motion.div
-        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
-        variants={imageVariants}
-        initial="hidden"
-        animate={controls}
+      <div
+        className=" max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
       >
         <Image
           src="/itinerary.png"
@@ -51,10 +25,10 @@ const WeddingCard2 = (props: Props) => {
           alt="Wedding invitation image"
           quality={100}
           priority
-          className="object-cover rounded-b-lg shadow-lg w-full"
+          className="object-cover shadow-lg"
         />
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 

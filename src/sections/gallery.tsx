@@ -5,13 +5,17 @@ import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+const widthImg = 480;
+const heightImg = 480;
+
 const images = [
-  { id: 1, src: '/image1.png', alt: '', width: 160, height: 450 },
-  { id: 2, src: '/image2.png', alt: '', width: 160, height: 400 },
-  { id: 3, src: '/image3.png', alt: '', width: 160, height: 300 },
-  { id: 4, src: '/Invitations.png', alt: '', width: 160, height: 350 },
-  { id: 5, src: '/image4.png', alt: 'พี่นวล', width: 160, height: 350 },
-  { id: 6, src: '/image5.png', alt: 'น้องราม', width: 160, height: 250 },
+  { id: 1, src: '/image8.png', alt: '', width: widthImg, height: heightImg },
+  { id: 2, src: '/image2.png', alt: '',width: widthImg, height: heightImg },
+  { id: 3, src: '/image5.png', alt: '',width: widthImg, height: heightImg },
+  { id: 4, src: '/image9.png', alt: '', width: widthImg, height: '320' }, 
+  { id: 5, src: '/image6.png', alt: '', width: widthImg, height: heightImg },
+  { id: 6, src: '/image1.png', alt: '', width: widthImg, height: heightImg },
+  { id: 7, src: '/image3.png', alt: '', width: widthImg, height: heightImg },
 ];
 
 const Gallery = () => {
@@ -39,41 +43,36 @@ const Gallery = () => {
         }
       }, [controls, inView]);
   return (
-    <section className="py-8">
+    <section  ref={ref}
+    id="gallery"
+    className="justify-center items-centermax-w-[74rem] text-center sm:mb-0 xl:w-[600px]lg:w-[500px] md:w-[500px]">
       {/* <div className="container mx-auto px-4"> */}
-      <motion.div
+      <div
       ref={ref}
       className="container mx-auto px-4"
-      variants={containerVariants}
-      initial="hidden"
-      animate={controls}
+    
     >
 
-        <motion.h2
-          className="text-2xl font-semibold mb-6"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+        <h2
+          className="text-2xl font-semibold"
+    
         >
-            <p className="text-4xl font-semibold mb-6 text-sky-500 mt-8 mb-4 text-center">
-            Gallery
+            <p className="text-2xl font-semibold mb-6 mt-4 text-gray-500 mt-8 mb-4 text-center">
+            GALLERY
             </p>
     
-        </motion.h2>
+        </h2>
         
-        <div className="flex flex-wrap gap-4 justify-center">
+        <div className="flex flex-wrap justify-center">
           {images.map((image, index) => (
-            <motion.div
+            <div
               key={image.id}
-              className="relative overflow-hidden rounded-lg shadow-lg"
+              className="relative overflow-hidden shadow-lg"
               style={{
                 width: `${image.width}px`,  // Custom width for each image
                 height: `${image.height}px`, // Custom height for each image
               }}
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
-              whileHover={{ scale: 1.05 }}
+            
             >
               <Image
                 src={image.src}
@@ -83,19 +82,16 @@ const Gallery = () => {
                 className="transition-transform duration-300"
                 loading="lazy"
               />
-              <motion.div
-                className="absolute inset-0 bg-black bg-opacity-40 opacity-0 hover:opacity-100 flex items-center justify-center text-white font-medium text-lg transition-opacity"
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-              
+              <div
+                className="absolute inset-0 bg-opacity-40 opacity-0 hover:opacity-100 flex items-center justify-center text-white font-medium text-lg transition-opacity"
+               
               >
             
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
