@@ -6,12 +6,12 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const images = [
-  { id: 1, src: '/image1.png', alt: '', width: 180, height: 450 },
-  { id: 2, src: '/image2.png', alt: '', width: 180, height: 400 },
-  { id: 3, src: '/image3.png', alt: '', width: 180, height: 300 },
-  { id: 4, src: '/Invitations.png', alt: '', width: 180, height: 350 },
-  { id: 5, src: '/image4.png', alt: 'พี่นวล', width: 180, height: 350 },
-  { id: 6, src: '/image5.png', alt: 'น้องราม', width: 180, height: 250 },
+  { id: 1, src: '/image1.png', alt: '', width: 160, height: 450 },
+  { id: 2, src: '/image2.png', alt: '', width: 160, height: 400 },
+  { id: 3, src: '/image3.png', alt: '', width: 160, height: 300 },
+  { id: 4, src: '/Invitations.png', alt: '', width: 160, height: 350 },
+  { id: 5, src: '/image4.png', alt: 'พี่นวล', width: 160, height: 350 },
+  { id: 6, src: '/image5.png', alt: 'น้องราม', width: 160, height: 250 },
 ];
 
 const Gallery = () => {
