@@ -2,23 +2,23 @@ import { Link } from "./types";
 
 export const links: Link[] = [
 {
-    nameEng: "Invitations",
+    nameEng: "Inv",
     hash: "#invitations",
 },
 {
-    nameEng: "Itinerary",
+    nameEng: "Iti",
     hash: "#itinerary",
 },
 {
-    nameEng: "Gallery",
+    nameEng: "Gal",
     hash: "#gallery",
 },
 {
-    nameEng: "Blessing",
+    nameEng: "Ble",
     hash: "#blessing",
 },
 {
-    nameEng: "Venue",
+    nameEng: "Ven",
     hash: "#venue",
 },
 ]

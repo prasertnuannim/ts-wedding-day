@@ -48,7 +48,7 @@ export default function Venue() {
           Tel : 095-9594188, 083-0099743
           </p>
         </div>
-        <div className="h-[80px] w-[100%]bg-white" />
+        <div className="h-[80px] w-[100%]bg-white p-8" />
       </div>
 
     </section>
