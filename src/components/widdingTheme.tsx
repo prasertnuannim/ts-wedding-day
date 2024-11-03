@@ -27,7 +27,7 @@ const WeddingTheme = (props: Props) => {
                 animate={controls}
                 initial={{ x: 100, opacity: 0 }}
                 transition={{ duration: 0.8, ease: 'easeInOut' }}
-                className='h-auto w-full bg-gradient-to-r from-cyan-400 via-teal-400 to-emerald-200 rounded-bl-[50px] rounded-bl-[30px] mt-8 shadow-xl relative overflow-hidden'
+                className='h-auto w-full bg-sky-500 rounded-bl-[50px] rounded-bl-[30px] mt-8 shadow-xl relative overflow-hidden'
             >
                 {/* Decorative Border Glow */}
                 <div className='absolute inset-0 rounded-bl-[50px] rounded-tr-[50px] bg-gradient-to-r from-cyan-300 via-white to-emerald-300 opacity-20' />

@@ -1,4 +1,5 @@
 import Blessing from "@/sections/blessing";
+import Gallery from "@/sections/gallery";
 import Invitations from "@/sections/invitations";
 import Itinerary from "@/sections/itinerary";
 import Venue from "@/sections/venue";
@@ -11,6 +12,9 @@ export default function Home() {
       </section>
       <section className="-mt-32 text-2xl sm:text-3xl md:text-4xl lg:text-5xl relative z-10">
         <Itinerary />
+      </section>
+      <section className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+        <Gallery />
       </section>
       <section className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
         <Blessing />

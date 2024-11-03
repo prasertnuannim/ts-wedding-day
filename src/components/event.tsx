@@ -25,7 +25,7 @@ const Event = (props: Props) => {
                 animate={controls}
                 initial={{ y: 100, opacity: 0 }}
                 transition={{ duration: 0.8, ease: 'easeInOut' }}
-                className='flex flex-col h-auto w-full bg-gradient-to-t from-sky-500 to-sky-800 rounded-xl mt-8 shadow-xl relative overflow-hidden xl:w-[600px]lg:w-[500px] md:w-[500px]'
+                className='flex flex-col h-auto w-full bg-blue-300 rounded-xl mt-8 shadow-xl relative overflow-hidden xl:w-[600px]lg:w-[500px] md:w-[500px]'
             >
                     <p className='text-xl justify-center items-center text-start pl-5 pt-5 pb-2 text-white font-extrabold'>EVENT</p>
                     <div className='pr-5 pl-5'>
@@ -33,7 +33,7 @@ const Event = (props: Props) => {
                     </div>
            
                 <div className='flex flex-col text-white text-lg justify-start items-start p-5'>
-                    <p>09:29 พิธีแห่ขันหมาก</p>
+                    <p>09:09 พิธีแห่ขันหมาก</p>
                     <p>09:39 พิธีหมั้น</p>
                     <p>11:00 รับประทานอาหารเที่ยง</p>
                 </div>

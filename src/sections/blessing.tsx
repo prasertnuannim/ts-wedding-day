@@ -62,7 +62,7 @@ const Blessing = (props: Props) => {
 
       <motion.div
         ref={ref}
-        className="bg-gradient-to-t from-gray-200 to-sky-200 rounded-lg p-2 pace-y-4 mb-8 shadow-xl"
+        className="bg-gradient-to-t bg-blue-500 rounded-lg p-2 pace-y-4 mb-8 shadow-xl"
         variants={containerVariants}
         initial="hidden"
         animate={controls}
