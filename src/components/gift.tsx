@@ -85,21 +85,21 @@ const Gift = (props: Props) => {
                             <img src='/QR-code.png' alt='QR Code' className='w-full h-full object-cover rounded-lg' />
                         </div>
 
-                        <div className='w-3/5 text-left pl-4 pt-10'>
-                        <p className=' text-[23px] pb-6 text-gray-500 font-extrabold'>
+                        <div className='w-3/5 text-left pl-4 '>
+                        <p className=' text-[20px] pb-6 text-gray-500 font-extrabold'>
                     มอบของขวัญให้คู่บ่าวสาว
                     </p>
                             <p className='text-[16px] font-bold text-white pb-4'>
                                 ธนาคาร <br/>
-                                <span className='text-gray-500 text-[16px] font-medium'>กสิกรไทย</span>
+                                <span className='text-gray-500 text-[14px] font-medium'>กสิกรไทย</span>
                             </p>
                             <p className='text-[16px] font-bold text-white pb-4'>
                                 ชื่อบัญชี <br/>
-                                <span className='text-gray-500 text-[16px] font-medium'>น.ส. จารุวรรณ พันลำภักดิ์</span>
+                                <span className='text-gray-500 text-[14px] font-medium'>น.ส. จารุวรรณ พันลำภักดิ์</span>
                             </p>
                             <p className='text-[16px] font-bold text-white pb-4'>
                                 เลขที่บัญชี <br/>
-                                <span className='text-gray-500 text-[16px] font-medium'>
+                                <span className='text-gray-500 text-[14px] font-medium'>
                                     {accountNumber}
                                 </span> <button
                                     className={`text-sm font-bold underline transition-all duration-200 relative ${copied ? 'text-gray-900 hover:text-white' : 'text-gray-500 hover:text-gray-600'

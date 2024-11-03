@@ -239,7 +239,7 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
                         )}
                     </p>
                     <button
-                         className="bg-sky-500 text-white py-2 rounded hover:bg-blue-300 text-sm"
+                         className="w-full bg-sky-500 text-white py-2 rounded hover:bg-blue-300 text-sm"
                         onClick={handleOTPSubmit}
                     >
                         ยืนยันรหัส OTP
@@ -264,7 +264,7 @@ const OTPModal = ({ fetchForms }: { fetchForms: () => void }) => {
                         />
                         <button
                             type="submit"
-                           className="bg-sky-500 text-white py-2 rounded hover:bg-blue-300 text-sm"
+                           className="w-full bg-sky-500 text-white py-2 rounded hover:bg-blue-300 text-sm"
                         >
                             ยืนยัน
                         </button>
