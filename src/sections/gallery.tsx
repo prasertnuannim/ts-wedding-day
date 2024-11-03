@@ -5,17 +5,17 @@ import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const widthImg = 480;
-const heightImg = 480;
+const widthImg = 450;
+const heightImg = 520;
 
 const images = [
   { id: 1, src: '/image3.png', alt: '', width: widthImg, height: heightImg },
   { id: 2, src: '/image8.png', alt: '',width: widthImg, height: heightImg },
-  { id: 3, src: '/image1.png', alt: '',width: widthImg, height: heightImg },
+  { id: 3, src: '/image1.png', alt: '',width: widthImg, height: '600' },
   { id: 4, src: '/image5.png', alt: '', width: widthImg, height: heightImg }, 
-  { id: 5, src: '/image2.png', alt: '', width: widthImg, height: heightImg },
+  { id: 5, src: '/image2.png', alt: '', width: widthImg, height: '600' },
   { id: 6, src: '/image6.png', alt: '', width: widthImg, height: heightImg },
-  { id: 7, src: '/image7.png', alt: '', width: widthImg, height: heightImg },
+  { id: 7, src: '/image7.png', alt: '', width: widthImg, height: '600' },
 ];
 
 const Gallery = () => {
