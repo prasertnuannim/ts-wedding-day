@@ -15,7 +15,7 @@ const images = [
   { id: 4, src: '/image5.png', alt: '', width: widthImg, height: heightImg }, 
   { id: 5, src: '/image2.png', alt: '', width: widthImg, height: '600' },
   { id: 6, src: '/image6.png', alt: '', width: widthImg, height: heightImg },
-  { id: 7, src: '/image7.png', alt: '', width: widthImg, height: '600' },
+  { id: 7, src: '/Image7.png', alt: '', width: widthImg, height: '600' },
 ];
 
 const Gallery = () => {
