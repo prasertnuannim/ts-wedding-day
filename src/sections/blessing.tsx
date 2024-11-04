@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 import Card from "@/components/cardBlessing";
 import OTPModal from "@/components/modalOTP";
 import axios from "axios";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from 'react-intersection-observer';
+import { useSectionInView } from "@/lib/useInView";
 
 type Props = {};
 type Form = {
@@ -13,19 +12,8 @@ type Form = {
   description: string;
 };
 
-const Blessing = (props: Props) => {
-  const { ref, inView } = useInView({
-    threshold: 0.2,
-  });
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      controls.start({ x: 0, opacity: 1 });
-    } else {
-      controls.start({ x: 100, opacity: 0 });
-    }
-  }, [controls, inView]);
+const Blessing = () => {
+  const { ref } = useSectionInView("#blessing", 0.1)
 
   const [forms, setForms] = useState<Form[]>([]);
 

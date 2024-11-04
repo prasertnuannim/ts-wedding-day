@@ -3,13 +3,10 @@ import React, { FC, useEffect } from 'react';
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
+import { useSectionInView } from '@/lib/useInView';
 
 const Invitations: FC = () => {
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    threshold: 0.2,
-  });
-
+  const { ref } = useSectionInView("#invitations", 0.1);
   return (
     <section
       ref={ref}

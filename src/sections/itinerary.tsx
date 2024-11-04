@@ -12,8 +12,7 @@ import WiddingCard1 from "@/components/widdingCard1";
 type Props = {};
 
 const Itinerary = (props: Props) => {
-  const { ref } = useSectionInView("#itinerary", 0.5);
-
+  const { ref } = useSectionInView("#itinerary", 0.1)
   return (
     <section
       ref={ref}

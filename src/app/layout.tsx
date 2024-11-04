@@ -10,6 +10,31 @@ const mali = Mali({
   weight: ["400"],
 });
 
+// export const metadata = {
+//   title: "Tan & Sert",
+//   description: "Join us to celebrate the wedding of Tan & Sert!",
+//   openGraph: {
+//     title: "Tan & Sert Wedding",
+//     description: "Join us to celebrate the wedding of Tan & Sert!",
+//     url: "https://ts-wedding-day.vercel.app",
+//     type: "website",
+//     images: [
+//       {
+//         url: "https://ts-wedding-day.vercel.app/card2.png",
+//         width: 1200,
+//         height: 630,
+//         alt: "Tan & Sert Wedding",
+//       },
+//     ],
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "Tan & Sert Wedding",
+//     description: "Join us to celebrate the wedding of Tan & Sert!",
+//     images: ["https://ts-wedding-day.vercel.app/card2.png"],
+//   },
+// };
+
 export const metadata = {
   title: "Tan & Sert",
   description: "Join us to celebrate the wedding of Tan & Sert!",
@@ -26,6 +51,8 @@ export const metadata = {
         alt: "Tan & Sert Wedding",
       },
     ],
+    site_name: "Tan & Sert Wedding",
+    locale: "th_TH", // Set to Thai language and Thailand region
   },
   twitter: {
     card: "summary_large_image",
@@ -34,26 +61,6 @@ export const metadata = {
     images: ["https://ts-wedding-day.vercel.app/card2.png"],
   },
 };
-
-
-// export const metadata: Metadata = {
-//   title: "Tan & Sert",
-//   description: "Tan & Sert Wedding.",
-//   openGraph: {
-//     title: "Tan & Sert",
-//     description: "A beautifully designed platform for all your needs.",
-//     url: "https://ts-wedding-day.vercel.app",
-//     images: [
-//       {
-//         url: "https://ts-wedding-day.vercel.app/card2.png",
-//         width: 1200,
-//         height: 630,
-//         alt: "Tan & Sert Wedding",
-//       },
-//     ],
-//     type: "website",
-//   }
-// };
 
 
 

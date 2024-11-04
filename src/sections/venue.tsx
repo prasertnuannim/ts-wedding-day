@@ -3,9 +3,6 @@
 import dynamic from 'next/dynamic';
 import Map from '@/components/map';
 import { useSectionInView } from '@/lib/useInView';
-import { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
-import { motion, useAnimation } from 'framer-motion';
 
 
 const MapComponent = dynamic(() => import('@/components/map'), {
@@ -13,17 +10,7 @@ const MapComponent = dynamic(() => import('@/components/map'), {
 });
 
 export default function Venue() {
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    threshold: 0.2, // Adjust when the animation should trigger (20% in view)
-  });
-  useEffect(() => {
-    if (inView) {
-      controls.start({ y: 0, opacity: 1 });
-    } else {
-      controls.start({ y: 100, opacity: 0 });
-    }
-  }, [controls, inView]);
+  const { ref } = useSectionInView("#venue", 0.1)
 
 
   return (
