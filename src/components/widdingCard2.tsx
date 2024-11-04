@@ -19,7 +19,7 @@ const WeddingCard2 = (props: Props) => {
         className=""
       >
         <Image
-          src="/card.png"
+          src="/card2.png"
           width={450}
           height={0}
           alt="Wedding invitation image"
