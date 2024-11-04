@@ -18,22 +18,23 @@ const mali = Mali({
 
 export const metadata: Metadata = {
   title: "Tan & Sert",
-  description: "",
+  description: "Tan & Sert Wedding.",
   openGraph: {
     title: "Tan & Sert",
-    description: "TS Wedding Day.",
+    description: "A beautifully designed platform for all your needs.",
     url: "https://ts-wedding-day.vercel.app",
     images: [
       {
         url: "https://ts-wedding-day.vercel.app/card2.png",
         width: 1200,
         height: 630,
-        alt: "Tan & Sert Preview Image",
+        alt: "Tan & Sert Wedding",
       },
     ],
     type: "website",
-  },
+  }
 };
+
 
 
 export default function RootLayout({
