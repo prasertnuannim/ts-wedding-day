@@ -1,14 +1,14 @@
-import React from 'react'
-import { FaSpinner } from 'react-icons/fa';
+import React from 'react';
+import { RiLoaderLine } from "react-icons/ri";
 
-type Props = {}
-
-function loading({}: Props) {
+function Loading() {
   return (
-    <div className="flex h-screen justify-center items-center ">
-   <p className='text-3xl relative animate-spin text-sky-500'> Loading...</p>
-  </div>
-  )
+    <div className="flex h-screen justify-center items-center relative">
+      <p className="text-3xl relative animate-spin text-sky-500" aria-label="Loading spinner">
+        <RiLoaderLine />
+      </p>
+    </div>
+  );
 }
 
-export default loading
+export default Loading;

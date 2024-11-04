@@ -23,7 +23,7 @@ const Gallery = () => {
   return (
     <section ref={ref}
       id="gallery"
-      className="justify-center items-centermax-w-[74rem] text-center sm:mb-0 xl:w-[600px]lg:w-[500px] md:w-[500px]">
+      className="justify-center items-centermax-w-[74rem] text-center sm:mb-0 xl:w-[600px]lg:w-[500px] md:w-[500px] ">
       {/* <div className="container mx-auto px-4"> */}
       <div
         ref={ref}
@@ -40,7 +40,7 @@ const Gallery = () => {
 
         </h2>
 
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center shadow-xl">
           {images.map((image, index) => (
             <div
               key={image.id}
@@ -56,7 +56,7 @@ const Gallery = () => {
                 alt={image.alt}
                 layout="fill"
                 objectFit="cover"
-                className="transition-transform duration-300"
+                className="transition-transform duration-300 "
                 loading="lazy"
               />
               <div

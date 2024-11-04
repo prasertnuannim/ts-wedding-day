@@ -70,7 +70,7 @@ function Map({}: Props) {
         /* Responsive width and aspect ratios */
         @media (min-width: 320px) {
           .map-container {
-            width: 80vw;
+            width: 92vw;
             padding-bottom: 70%;
           }
         }

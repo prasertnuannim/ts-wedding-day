@@ -19,7 +19,7 @@ const Itinerary = (props: Props) => {
       id="itinerary"
       className=""
     >
-      <div className="justify-center items-center xl:w-[600px]lg:w-[500px] md:w-[500px]">
+      <div className="justify-center items-center xl:w-[600px]lg:w-[500px] md:w-[500px] shadow-xl">
        <div>
        <WiddingCard1/>
       </div> 

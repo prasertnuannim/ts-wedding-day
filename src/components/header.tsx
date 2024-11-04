@@ -25,7 +25,7 @@ export default function Header({ links }: HeaderProps) {
             >
               <NextLink
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-blue-500 transition dark:text-gray-500 dark:hover:text-blue-500",
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-blue-800 transition dark:text-gray-500 dark:hover:text-blue-500",
                   {
                     "text-sky-800 font-bold text-[18px]":
                       activeSection === link.hash,

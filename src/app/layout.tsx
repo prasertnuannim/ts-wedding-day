@@ -36,7 +36,7 @@ const mali = Mali({
 // };
 
 export const metadata = {
-  title: "Tan & Sert",
+  title: "Tan & Sert Wedding",
   description: "Join us to celebrate the wedding of Tan & Sert!",
   openGraph: {
     title: "Tan & Sert Wedding",
@@ -50,9 +50,15 @@ export const metadata = {
         height: 630,
         alt: "Tan & Sert Wedding",
       },
+      {
+        url: "https://fallback-image-url.com/fallback.png",
+        width: 1200,
+        height: 630,
+        alt: "Fallback Image",
+      }
     ],
     site_name: "Tan & Sert Wedding",
-    locale: "th_TH", // Set to Thai language and Thailand region
+    locale: "en",
   },
   twitter: {
     card: "summary_large_image",

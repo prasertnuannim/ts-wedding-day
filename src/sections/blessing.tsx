@@ -44,7 +44,7 @@ const Blessing = () => {
     <section
       ref={ref}
       id="blessing"
-      className="justify-center items-center mt-4 max-w-[74rem] text-center sm:mb-0 xl:w-[600px]lg:w-[500px] md:w-[500px]"
+      className="justify-center items-center mt-4 max-w-[74rem] text-center sm:mb-0 xl:w-[600px]lg:w-[500px] md:w-[500px] shadow-xl"
     >
       <div
         ref={ref}
