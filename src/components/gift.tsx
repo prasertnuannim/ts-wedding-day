@@ -64,7 +64,7 @@ const Gift = (props: Props) => {
                 className='flex flex-col h-auto w-full bg-blue-300 shadow-2xl relative'
             >
                 <div className='flex flex-col'>
-                    <p className='absolute inset-0 flex items-start justify-end text-xl pr-5 pt-1 text-gray-500 font-extrabold'>
+                    <p className='absolute inset-0 flex items-start justify-center text-xl pr-5 pt-1 text-gray-500 font-extrabold'>
                     มอบของขวัญให้คู่บ่าวสาว
                     </p>
                 </div>
