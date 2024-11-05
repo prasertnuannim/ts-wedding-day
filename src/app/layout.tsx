@@ -45,16 +45,10 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://ts-wedding-day.vercel.app/card2.png",
+        url: "https://ts-wedding-day.vercel.app/cardWedding.jpg",
         width: 1200,
         height: 630,
         alt: "Tan & Sert Wedding",
-      },
-      {
-        url: "https://fallback-image-url.com/fallback.png",
-        width: 1200,
-        height: 630,
-        alt: "Fallback Image",
       }
     ],
     site_name: "Tan & Sert Wedding",
