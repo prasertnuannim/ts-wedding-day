@@ -11,7 +11,7 @@ const mali = Mali({
 });
 
 // export const metadata = {
-//   title: "Tan & Sert",
+//   title: "Tan & Sert Wedding",
 //   description: "Join us to celebrate the wedding of Tan & Sert!",
 //   openGraph: {
 //     title: "Tan & Sert Wedding",
@@ -20,12 +20,14 @@ const mali = Mali({
 //     type: "website",
 //     images: [
 //       {
-//         url: "https://ts-wedding-day.vercel.app/card2.png",
+//         url: "https://ts-wedding-day.vercel.app/cardWedding.jpg",
 //         width: 1200,
 //         height: 630,
 //         alt: "Tan & Sert Wedding",
-//       },
+//       }
 //     ],
+//     site_name: "Tan & Sert Wedding",
+//     locale: "en",
 //   },
 //   twitter: {
 //     card: "summary_large_image",
@@ -36,29 +38,27 @@ const mali = Mali({
 // };
 
 export const metadata = {
-  title: "Tan & Sert Wedding",
-  description: "Join us to celebrate the wedding of Tan & Sert!",
+  title: 'Your Page Title',
+  description: 'A short description of your page',
   openGraph: {
-    title: "Tan & Sert Wedding",
-    description: "Join us to celebrate the wedding of Tan & Sert!",
-    url: "https://ts-wedding-day.vercel.app",
-    type: "website",
+    title: 'Your Page Title',
+    description: 'A short description of your page',
+    url: "https://ts-wedding-day.vercel.app/cardWedding.jpg",
     images: [
       {
-        url: "https://photos.app.goo.gl/TrJonXk2dGuDu7Ga9",
+        url: "https://ts-wedding-day.vercel.app/cardWedding.jpg",
         width: 1200,
         height: 630,
-        alt: "Tan & Sert Wedding",
-      }
+        alt: 'A description of the image',
+      },
     ],
-    site_name: "Tan & Sert Wedding",
-    locale: "en",
+    type: 'website',
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Tan & Sert Wedding",
-    description: "Join us to celebrate the wedding of Tan & Sert!",
-    images: ["https://ts-wedding-day.vercel.app/card2.png"],
+    card: 'summary_large_image',
+    title: 'Your Page Title',
+    description: 'A short description of your page',
+    url: "https://ts-wedding-day.vercel.app/cardWedding.jpg",
   },
 };
 
