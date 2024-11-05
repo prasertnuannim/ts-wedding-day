@@ -37,54 +37,76 @@ const mali = Mali({
 //   },
 // };
 
+
+// export default function RootLayout({
+//   children,
+// }: Readonly<{
+//   children: React.ReactNode;
+// }>) {
+//   return (
+//     <html lang="en" className="!scroll-smooth">
+//       <body
+//         className={`${mali.variable} font-hurricane flex flex-col bg-gray-50
+//        text-gray-950 relative`} 
+//       >
+//         <Providers>
+//           <Navbar />
+//           {children}
+//         </Providers>
+//       </body>
+//     </html>
+//   );
+// }
+
+
+import Head from "next/head";
+
 export const metadata = {
-  title: 'Your Page Title',
-  description: 'A short description of your page',
+  title: "Tan & Sert Wedding",
+  description: "Join us to celebrate the wedding of Tan & Sert!",
   openGraph: {
-    title: 'Your Page Title',
-    description: 'A short description of your page',
-    url: "https://ts-wedding-day.vercel.app/cardWedding.jpg",
+    title: "Tan & Sert Wedding",
+    description: "Join us to celebrate the wedding of Tan & Sert!",
+    url: "https://ts-wedding-day.vercel.app",
+    type: "website",
     images: [
       {
         url: "https://ts-wedding-day.vercel.app/cardWedding.jpg",
         width: 1200,
         height: 630,
-        alt: 'A description of the image',
-      },
+        alt: "Tan & Sert Wedding",
+      }
     ],
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Your Page Title',
-    description: 'A short description of your page',
-    url: "https://ts-wedding-day.vercel.app/cardWedding.jpg",
+    site_name: "Tan & Sert Wedding",
+    locale: "en",
   },
 };
 
-
-
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" className="!scroll-smooth">
-      <body
-        className={`${mali.variable} font-hurricane flex flex-col bg-gray-50
-       text-gray-950 relative`} 
-      >
-        {/* <div
-          className="bg-[#adeff6] absolute top-[-6rem] flex-1 -z-[10] right-[11rem] h-[31.25rem] w-[31.25rem] 
-        rounded-full blur-[10rem] sm:w-[68.75rem]`"
+    <html lang="en">
+      <Head>
+        <meta property="og:title" content="Tan & Sert Wedding" />
+        <meta
+          property="og:description"
+          content="Join us to celebrate the wedding of Tan & Sert!"
         />
-
-        <div
-          className="bg-[#8474ff] absolute top-[-1rem] -z-[10] flex-1 left-[-35rem] h-[31.25rem] w-[50rem] 
-        rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]
-        `"
-        /> */}
+        <meta property="og:url" content="https://ts-wedding-day.vercel.app" />
+        <meta
+          property="og:image"
+          content="https://ts-wedding-day.vercel.app/cardWedding.jpg"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Tan & Sert Wedding" />
+        <meta property="og:locale" content="en" />
+      </Head>
+      <body className={`${mali.variable} font-hurricane flex flex-col bg-gray-50
+        text-gray-950 relative`}
+      >
         <Providers>
           <Navbar />
           {children}
