@@ -72,8 +72,8 @@ export const metadata = {
     images: [
       {
         url: "https://ts-wedding-day.vercel.app/cardWedding.jpg",
-        width: 1200,
-        height: 630,
+        width: 320,
+        height: 320,
         alt: "Tan & Sert Wedding",
       }
     ],
