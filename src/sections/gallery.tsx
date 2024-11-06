@@ -8,7 +8,6 @@ const widthImg = 368;
 const heightImg = 520;
 
 const images = [
-  { id: 1, src: '/image3.png', alt: '', width: widthImg, height: heightImg },
   { id: 2, src: '/image8.png', alt: '', width: widthImg, height: heightImg },
   { id: 3, src: '/image1.png', alt: '', width: widthImg, height: '600' },
   { id: 4, src: '/image5.png', alt: '', width: widthImg, height: heightImg },

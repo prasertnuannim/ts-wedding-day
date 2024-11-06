@@ -84,28 +84,28 @@ function Map({}: Props) {
 
         @media (min-width: 768px) {
           .map-container {
-            width: 60vw;
-            padding-bottom: 40%;
+            width: 50vw;
+            padding-bottom: 50%;
           }
         }
 
         @media (min-width: 1024px) {
           .map-container {
-            width: 60vw;
-            padding-bottom: 35%;
+            width: 39vw;
+            padding-bottom: 50%;
           }
         }
 
         @media (min-width: 1280px) {
           .map-container {
-            width: 40vw;
-            padding-bottom: 30%;
+            width: 33vw;
+            padding-bottom: 50%;
           }
         }
 
         @media (min-width: 1536px) {
           .map-container {
-            width: 25vw;
+            width: 26vw;
             padding-bottom: 50%;
           }
         }
