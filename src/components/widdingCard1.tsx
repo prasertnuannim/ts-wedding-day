@@ -12,7 +12,7 @@ const WeddingCard1 = (props: Props) => {
   return (
     <div
 
-      className='flex flex-col rounded-t-[140px] -mt-[10px] shadow-2xl p-6 relative overflow-hidden xl:w-[600px]lg:w-[500px] md:w-[500px]' style={{ backgroundColor: '#AFD7F6' }}>
+      className='flex flex-col bg-blue-300 rounded-t-[140px] -mt-[10px] shadow-2xl p-6 relative overflow-hidden xl:w-[600px]lg:w-[500px] md:w-[500px]'>
 
 
       {/* Invitation Heading */}
