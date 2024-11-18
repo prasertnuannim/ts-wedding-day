@@ -8,8 +8,8 @@ const widthImg = 368;
 const heightImg = 520;
 
 const images = [
-  { id: 9, src:'/Image11.png', alt: '', width: widthImg, height: '250' },
-  { id: 10, src:'/Image13.png', alt: '', width: widthImg, height: '500' },
+  { id: 9, src:'/image11.png', alt: '', width: widthImg, height: '250' },
+  { id: 10, src:'/image13.png', alt: '', width: widthImg, height: '500' },
   { id: 8, src: '/kokrdok.png', alt: '', width: widthImg, height: '600' },
   { id: 2, src: '/image8.png', alt: '', width: widthImg, height: heightImg },
   { id: 3, src: '/image1.png', alt: '', width: widthImg, height: '600' },
