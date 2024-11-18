@@ -16,7 +16,7 @@ const Invitations: FC = () => {
         <div
         className="flex items-center justify-center shadow-xl">
           <Image
-            src="/kokrdok.png"
+            src="/image12.png"
             width={480}
             height={480}
             alt="Invitation photo"
